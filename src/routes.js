@@ -5,6 +5,7 @@ const {
   editNoteByIdHandler,
   deleteByIdHandler,
 } = require('./handler');
+
 const routes = [
   {
     method: 'POST',
