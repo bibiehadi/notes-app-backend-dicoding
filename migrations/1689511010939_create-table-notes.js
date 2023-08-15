@@ -24,7 +24,7 @@ exports.up = (pgm) => {
       type: 'TEXT',
       notNull: true,
     },
-    updateAt: {
+    updatedAt: {
       type: 'TEXT',
       notNull: true,
     },
