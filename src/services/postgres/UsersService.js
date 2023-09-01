@@ -74,10 +74,10 @@ class UsersService {
     return id;
   }
 
-  async getUsersByUsername(username){
+  async getUsersByUsername(username) {
     const query = {
       text: 'SELECT * FROM users WHERE username LIKE $1',
-      values: [`%${username}%`],
+      values: [username],
     };
 
     const result = await this._pool.query(query);
